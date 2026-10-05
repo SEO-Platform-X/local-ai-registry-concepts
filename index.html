@@ -760,10 +760,7 @@ body::before{content:"";position:fixed;inset:0;background:url("data:image/svg+xm
 #dc-root .refs .rt{font-family:"Hanken Grotesk",sans-serif !important;font-size:inherit !important}
 /* more glass: one frosted sheet behind the whole page body */
 #dc-root > div{position:relative;isolation:isolate;height:auto !important;min-height:100vh;padding-bottom:40px}
-#dc-root > div::before{content:"";position:absolute;top:128px;bottom:24px;left:84px;right:84px;z-index:-1;border-radius:34px;
-  background:#ede6d9;border:0;
-  
-  box-shadow:0 1px 0 rgba(255,255,255,0.95) inset,0 40px 90px -40px rgba(15,26,51,0.35),0 12px 30px -18px rgba(15,26,51,0.18)}
+#dc-root > div::before{content:none}
 /* deeper, layered shadows on cards; brighter glass edge */
 #dc-root .card,#dc-root .aiv,#dc-root [style*="background: #ffffff"],#dc-root [style*="background: #fff;"],#dc-root [style*="background: #fbf8f3"]{
   background:#f6f1e8 !important;border:0 !important;
