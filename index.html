@@ -700,19 +700,23 @@ body::before{content:"";position:fixed;inset:0;background:url("data:image/svg+xm
 #dc-root .rt{font-size:25px !important;line-height:1.2 !important;color:var(--navy) !important}
 #dc-root .aiv-v{font-size:52px !important;line-height:1 !important}
 /* header: the paper itself, a hairline below */
-#dc-root header[style],#dc-root header{background:rgba(244,239,230,0.72) !important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:0 !important;box-shadow:0 1px 0 var(--line) !important}
-#dc-root header [style*="border"]{background:rgba(255,255,255,0.55) !important;border:1px solid var(--line) !important;border-radius:14px !important}
+#dc-root header[style],#dc-root header{background:#f4efe6 !important;border:0 !important;box-shadow:0 1px 0 var(--line) !important}
+#dc-root header [style*="border"]{background:#f6f1e8 !important;border:1px solid var(--line) !important;border-radius:14px !important}
 #dc-root header > span a[style*="border-radius"]{background:var(--navy) !important;color:#fff !important;border-radius:14px !important}
 /* light glass cards in cream, generous corners like the footer card */
 #dc-root .card,#dc-root .aiv,#dc-root [style*="background: #ffffff"],#dc-root [style*="background: #fff;"],#dc-root [style*="background: #fbf8f3"]{
   background:rgba(250,246,238,0.72) !important;border:1px solid var(--edge) !important;border-radius:26px !important;
-  -webkit-backdrop-filter:blur(16px) saturate(120%);backdrop-filter:blur(16px) saturate(120%);
+  
   box-shadow:0 1px 0 rgba(255,255,255,0.9) inset,0 24px 50px -30px rgba(15,26,51,0.25) !important}
 #dc-root .card .card,#dc-root .card [style*="background: #ffffff"]{background:transparent !important;border:0 !important;box-shadow:none !important;-webkit-backdrop-filter:none;backdrop-filter:none;border-radius:0 !important;border-bottom:1px solid var(--line) !important}
-#dc-root [style*="background: #f3efe7"]{background:rgba(245,223,200,0.45) !important;border:0 !important}
+#dc-root [style*="background: #f3efe7"]{background:#efe8dc !important;border:0 !important}
 /* the AI Score panel takes the peach of the brand plates */
 #dc-root .aiv{background:rgba(245,223,200,0.78) !important}
-#dc-root .aiv-b svg,#dc-root .aiv-x,#dc-root .sdiv{display:none !important}
+#dc-root .sdiv{display:none !important}
+#dc-root .aiv-b .lr-ic{width:54px;height:54px;padding:8px;margin-bottom:4px}
+#dc-root .nocode .lr-ic{width:16px;height:16px;padding:0;background:transparent;box-shadow:none;margin-right:2px}
+#dc-root .tlon .lr-ic,#dc-root .tloff .lr-ic{width:24px;height:24px;padding:4px}
+#dc-root .aiv-x{display:flex !important;opacity:0.9}
 #dc-root .aiv-b{font-family:"Cormorant Garamond",Georgia,serif !important;font-style:italic;font-size:26px !important;color:var(--navy) !important}
 #dc-root .aiv-n{flex:1 1 0 !important;width:auto !important;align-items:flex-start !important;text-align:left !important;gap:6px !important}
 #dc-root .aiv-n .sl{white-space:normal !important}
@@ -730,18 +734,18 @@ body::before{content:"";position:fixed;inset:0;background:url("data:image/svg+xm
 #dc-root .btn{border-radius:16px !important;box-shadow:none !important;font-weight:600 !important}
 #dc-root .btn.b-dark,#dc-root .btn.grad,#dc-root .btn.b-coral{background:var(--navy) !important;color:#fff !important;border:0 !important;box-shadow:0 14px 30px -14px rgba(15,26,51,0.55) !important}
 #dc-root .btn.b-dark::after,#dc-root .btn.grad::after{content:"  ⟶";font-weight:400}
-#dc-root .btn:not(.b-dark):not(.grad):not(.b-coral),#dc-root .shb{background:rgba(255,255,255,0.6) !important;color:var(--navy) !important;border:1px solid var(--line) !important;border-radius:16px !important}
-#dc-root .tag,#dc-root .pill,#dc-root .uf > span{background:rgba(255,255,255,0.6) !important;border:1px solid var(--line) !important;color:var(--navy) !important;border-radius:999px !important}
+#dc-root .btn:not(.b-dark):not(.grad):not(.b-coral),#dc-root .shb{background:#f6f1e8 !important;color:var(--navy) !important;border:1px solid var(--line) !important;border-radius:16px !important}
+#dc-root .tag,#dc-root .pill,#dc-root .uf > span{background:#f6f1e8 !important;border:1px solid var(--line) !important;color:var(--navy) !important;border-radius:999px !important}
 #dc-root .uf > span.on{background:var(--navy) !important;color:#fff !important}
 #dc-root .tag.red{color:var(--coral) !important;border-color:rgba(239,91,60,0.35) !important;font-style:italic;font-family:"Cormorant Garamond",Georgia,serif !important;font-size:17px !important;font-weight:600 !important}
 /* cashback: a quiet glass row with a custom mark */
-#dc-root .cbs{background:rgba(255,255,255,0.55) !important;border:1px solid var(--edge) !important;border-radius:18px !important}
+#dc-root .cbs{background:#f5dfc8 !important;border:0 !important;border-radius:18px !important;padding:14px 18px !important}
 #dc-root .cbs-ic{background:var(--coral) !important}
 #dc-root .cbs b{color:var(--coral) !important;font-family:"Cormorant Garamond",Georgia,serif !important;font-style:italic;font-size:19px}
 /* tabs: serif, underline in coral */
 #dc-root .tlon,#dc-root .tloff{background:transparent !important;border-radius:0 !important;font-family:"Cormorant Garamond",Georgia,serif !important;font-size:21px !important;font-weight:500 !important}
 #dc-root .tlon{box-shadow:inset 0 -2px 0 var(--coral) !important}
-#dc-root input:not([type]),#dc-root input[type=text],#dc-root textarea,#dc-root select{background:rgba(255,255,255,0.6) !important;border:1px solid var(--line) !important;border-radius:16px !important;box-shadow:none !important;font-family:"Cormorant Garamond",Georgia,serif !important;font-size:19px !important}
+#dc-root input:not([type]),#dc-root input[type=text],#dc-root textarea,#dc-root select{background:#f6f1e8 !important;border:1px solid var(--line) !important;border-radius:16px !important;box-shadow:none !important;font-family:"Cormorant Garamond",Georgia,serif !important;font-size:19px !important}
 #dc-root a:not(.btn):not(.shb){text-decoration-color:rgba(239,91,60,0.5);text-underline-offset:4px}
 #dc-root .rrow{border-top:0 !important;padding:22px 0 !important}
 #dc-root .rrow + .rrow{border-top:1px solid var(--line) !important}
@@ -759,18 +763,26 @@ body::before{content:"";position:fixed;inset:0;background:url("data:image/svg+xm
 /* more glass: one frosted sheet behind the whole page body */
 #dc-root > div{position:relative;isolation:isolate;height:auto !important;min-height:100vh;padding-bottom:40px}
 #dc-root > div::before{content:"";position:absolute;top:128px;bottom:24px;left:84px;right:84px;z-index:-1;border-radius:34px;
-  background:linear-gradient(160deg,rgba(255,252,246,0.62),rgba(250,244,234,0.38));border:1px solid rgba(255,255,255,0.75);
-  -webkit-backdrop-filter:blur(22px) saturate(130%);backdrop-filter:blur(22px) saturate(130%);
+  background:#ede6d9;border:0;
+  
   box-shadow:0 1px 0 rgba(255,255,255,0.95) inset,0 40px 90px -40px rgba(15,26,51,0.35),0 12px 30px -18px rgba(15,26,51,0.18)}
 /* deeper, layered shadows on cards; brighter glass edge */
 #dc-root .card,#dc-root .aiv,#dc-root [style*="background: #ffffff"],#dc-root [style*="background: #fff;"],#dc-root [style*="background: #fbf8f3"]{
-  background:linear-gradient(160deg,rgba(255,253,249,0.82),rgba(248,242,232,0.62)) !important;
-  -webkit-backdrop-filter:blur(24px) saturate(140%);backdrop-filter:blur(24px) saturate(140%);
+  background:#f6f1e8 !important;border:0 !important;
+  
   box-shadow:0 1px 0 rgba(255,255,255,0.95) inset,0 -1px 0 rgba(15,26,51,0.04) inset,0 28px 60px -26px rgba(15,26,51,0.38),0 8px 18px -10px rgba(15,26,51,0.16) !important}
-#dc-root .aiv{background:linear-gradient(160deg,rgba(248,228,208,0.88),rgba(245,223,200,0.62)) !important}
+#dc-root .aiv{background:#f5dfc8 !important}
 #dc-root .hmos{box-shadow:0 30px 60px -28px rgba(15,26,51,0.4),0 8px 20px -12px rgba(15,26,51,0.2)}
 #dc-root .btn:not(.b-dark):not(.grad):not(.b-coral),#dc-root .shb,#dc-root .tag,#dc-root .pill,#dc-root .uf > span,#dc-root .cbs{
-  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,0.9) inset,0 8px 18px -12px rgba(15,26,51,0.3) !important}
+  box-shadow:0 1px 0 rgba(255,255,255,0.9) inset,0 8px 18px -12px rgba(15,26,51,0.3) !important}
+/* footer voice */
+#dc-root .h2{color:#0f1a33 !important}
+#dc-root aside .card > :first-child{letter-spacing:0}
+/* custom icons, set in a peach disc so they read as ours */
+.lr-ic{width:30px;height:30px;padding:6px;border-radius:50%;background:#f5dfc8;box-sizing:border-box;flex-shrink:0;display:inline-block;vertical-align:middle;box-shadow:0 0 0 1px rgba(15,26,51,0.06) inset}
+.btn .lr-ic,.shb .lr-ic,a .lr-ic{width:26px !important;height:26px !important;min-width:26px;padding:4px !important;margin:-4px 2px -4px -6px}
+#dc-root .aiv-b svg:not(.lr-ic){display:none !important}
+.cbs-ic .lr-ic{background:transparent;padding:4px;width:28px;height:28px;box-shadow:none}
 /* custom icons */
 .lr-ic{width:18px;height:18px;flex-shrink:0;display:inline-block;vertical-align:-3px}
 </style></head><body style="margin:0"><div class="lr-street" aria-hidden="true"></div><div id="dc-root"></div><script type="text/x-dc-tpl" id="dc-tpl">
@@ -1903,9 +1915,11 @@ __dcStart(Component);</script><script>
   if(document.readyState==='complete')start();else window.addEventListener('load',start);
   setTimeout(start,50);
 })();
-</script><script>(function(){var IC={"Share": "<path d=\"M12 3v12\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M7.5 7.5L12 3l4.5 4.5\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12v7.5h14V12\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"19.5\" r=\"1.3\" fill=\"#ef5b3c\"/>", "Show all": "<rect x=\"3.5\" y=\"4.5\" width=\"17\" height=\"15\" rx=\"2\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M3.5 15l5-4 4 3 3-2 5 4\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"16\" cy=\"8.5\" r=\"1.4\" fill=\"#ef5b3c\"/>", "Report": "<path d=\"M5 21V4\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 4.5c4-2 6 2 10 0s4-1 4-1v9s-1-1-4 1-6-2-10 0\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"5\" cy=\"21\" r=\"1.2\" fill=\"#ef5b3c\"/>", "Suggest": "<path d=\"M4 20l1.2-4.8L16 4.4a2 2 0 0 1 2.8 0l.8.8a2 2 0 0 1 0 2.8L8.8 18.8z\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M14 6.5l3.5 3.5\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"4\" cy=\"20\" r=\"1.3\" fill=\"#ef5b3c\"/>", "Add media": "<rect x=\"5\" y=\"10\" width=\"14\" height=\"10\" rx=\"2\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M8 10V7.5a4 4 0 0 1 8 0V10\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"15\" r=\"1.4\" fill=\"#ef5b3c\"/>", "cashback": "<path d=\"M4 9h16v11H4z\" stroke=\"#fff\" stroke-width=\"1.5\" fill=\"none\" stroke-linejoin=\"round\"/><path d=\"M12 9v11M4 13h16\" stroke=\"#fff\" stroke-width=\"1.5\"/><path d=\"M12 9c-1.5-3.5-5-3.5-5-1.2S10.5 9 12 9c1.5 0 5-.5 5-1.2S13.5 5.5 12 9\" stroke=\"#fff\" stroke-width=\"1.5\" fill=\"none\"/>"};var root=document.getElementById('dc-root');
+</script><script>(function(){var IC={"seal": "<circle cx=\"12\" cy=\"12\" r=\"8.5\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"12\" r=\"5.5\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"1.2 1.6\"/><path d=\"M9.5 12.2l1.7 1.7 3.4-3.6\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M8 19.5l-1.5 3 3-1 1-.5M16 19.5l1.5 3-3-1-1-.5\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"3.5\" r=\"1.2\" fill=\"#ef5b3c\"/>", "info": "<circle cx=\"12\" cy=\"12\" r=\"8.5\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M12 11v5\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"7.8\" r=\"1.1\" fill=\"#ef5b3c\"/>", "lock": "<rect x=\"5\" y=\"10.5\" width=\"14\" height=\"9.5\" rx=\"2\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M8 10.5V8a4 4 0 0 1 8 0v2.5\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"15.2\" r=\"1.3\" fill=\"#ef5b3c\"/>", "Request a booking": "<rect x=\"3.5\" y=\"5\" width=\"17\" height=\"15\" rx=\"2.5\" stroke=\"#ffffff\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M3.5 9.5h17M8 3v4M16 3v4\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-linecap=\"round\"/><circle cx=\"15.5\" cy=\"14.5\" r=\"1.6\" fill=\"#ef5b3c\"/>", "Is this you? Claim it": "<circle cx=\"8\" cy=\"15\" r=\"4\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M11 12.5L20 4M16.5 7.5l2 2M14.5 9.5l1.5 1.5\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"8\" cy=\"15\" r=\"1.2\" fill=\"#ef5b3c\"/>", "Post": "<path d=\"M4 20c2-6 6-12 15-16-3 8-8 12-13 13\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M4 20l5-5\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"19\" cy=\"4\" r=\"1.3\" fill=\"#ef5b3c\"/>", "Share": "<path d=\"M12 3v12\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M7.5 7.5L12 3l4.5 4.5\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 12v7.5h14V12\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"19.5\" r=\"1.3\" fill=\"#ef5b3c\"/>", "Show all": "<rect x=\"3.5\" y=\"4.5\" width=\"17\" height=\"15\" rx=\"2\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M3.5 15l5-4 4 3 3-2 5 4\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"16\" cy=\"8.5\" r=\"1.4\" fill=\"#ef5b3c\"/>", "Report": "<path d=\"M5 21V4\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M5 4.5c4-2 6 2 10 0s4-1 4-1v9s-1-1-4 1-6-2-10 0\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"5\" cy=\"21\" r=\"1.2\" fill=\"#ef5b3c\"/>", "Suggest": "<path d=\"M4 20l1.2-4.8L16 4.4a2 2 0 0 1 2.8 0l.8.8a2 2 0 0 1 0 2.8L8.8 18.8z\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M14 6.5l3.5 3.5\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"4\" cy=\"20\" r=\"1.3\" fill=\"#ef5b3c\"/>", "Add media": "<rect x=\"5\" y=\"10\" width=\"14\" height=\"10\" rx=\"2\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M8 10V7.5a4 4 0 0 1 8 0V10\" fill=\"none\" stroke=\"#0f1a33\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"12\" cy=\"15\" r=\"1.4\" fill=\"#ef5b3c\"/>", "cashback": "<path d=\"M4 9h16v11H4z\" stroke=\"#fff\" stroke-width=\"1.5\" fill=\"none\" stroke-linejoin=\"round\"/><path d=\"M12 9v11M4 13h16\" stroke=\"#fff\" stroke-width=\"1.5\"/><path d=\"M12 9c-1.5-3.5-5-3.5-5-1.2S10.5 9 12 9c1.5 0 5-.5 5-1.2S13.5 5.5 12 9\" stroke=\"#fff\" stroke-width=\"1.5\" fill=\"none\"/>"};var root=document.getElementById('dc-root');
 function ic(){root.querySelectorAll('a,button,span,div').forEach(function(el){if(el.__ic)return;var sv=el.querySelector(':scope > svg');if(!sv)return;var t=el.textContent.trim();
- var k=Object.keys(IC).find(function(x){return x!=='cashback'&&t.indexOf(x)===0});if(el.classList.contains('cbs-ic'))k='cashback';
+ var k=Object.keys(IC).find(function(x){return x!=='cashback'&&x!=='Post'&&t.indexOf(x)===0});if(el.classList.contains('cbs-ic'))k='cashback';
+ if(el.classList.contains('nocode'))k='info';if(el.classList.contains('aiv-b'))k='seal';if(el.className.indexOf('lock')>-1&&(el.classList.contains('tloff')||el.classList.contains('tlon')))k='lock';
  if(!k)return;el.__ic=1;var n=document.createElementNS('http://www.w3.org/2000/svg','svg');n.setAttribute('viewBox','0 0 24 24');n.setAttribute('class','lr-ic');n.innerHTML=IC[k];sv.replaceWith(n);});}
-var mo=new MutationObserver(function(){mo.disconnect();ic();mo.observe(root,{childList:true,subtree:true});});
-setTimeout(function(){ic();mo.observe(root,{childList:true,subtree:true});},80);})();</script></body></html>
+function add(){root.querySelectorAll('a.btn,button.btn,a.shb').forEach(function(el){if(el.__ad||el.querySelector('svg'))return;var t=el.textContent.trim();if(['Request a booking','Is this you? Claim it','Post'].indexOf(t)<0)return;el.__ad=1;var n=document.createElementNS('http://www.w3.org/2000/svg','svg');n.setAttribute('viewBox','0 0 24 24');n.setAttribute('class','lr-ic');n.innerHTML=IC[t];if(t!=='Is this you? Claim it'){n.style.background='transparent';n.style.boxShadow='none';n.style.padding='3px';n.style.width='24px';n.style.height='24px';}el.insertBefore(n,el.firstChild);el.style.display='inline-flex';el.style.alignItems='center';el.style.gap='8px';});}
+var mo=new MutationObserver(function(){mo.disconnect();ic();add();mo.observe(root,{childList:true,subtree:true});});
+setTimeout(function(){ic();add();mo.observe(root,{childList:true,subtree:true});},80);})();</script></body></html>
