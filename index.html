@@ -734,8 +734,10 @@ body::before{content:"";position:fixed;inset:0;background:url("data:image/svg+xm
 #dc-root .rkd.q{color:#2b59d9 !important}
 /* photos: real plates from the registry, drawn on peach */
 #dc-root .hmos{gap:10px !important;border-radius:26px !important;overflow:hidden}
-#dc-root .hmos > div{background-color:var(--peach) !important;background-repeat:no-repeat !important;background-position:center 70% !important;background-size:contain !important;border-radius:0 !important}
-#dc-root .hmos > div:first-child{background-size:auto 92% !important}
+#dc-root .hmos > div{background-color:#8796b0 !important;background-size:cover !important;background-position:center !important;background-repeat:no-repeat !important;background-blend-mode:luminosity !important;border-radius:0 !important;position:relative}
+#dc-root .hmos > div::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,26,51,0.05),rgba(15,26,51,0.28));pointer-events:none}
+#dc-root .hmos > div > *{position:relative;z-index:1}
+#dc-root .hmos{clip-path:polygon(0 2.5%,100% 0,100% 97.5%,0 100%)}
 #dc-root .nocode{background:rgba(15,26,51,0.78) !important;color:#fff !important;border:0 !important;border-radius:999px !important}
 #dc-root .nocode *{color:#fff !important}
 /* buttons: navy with a long arrow, like "Get your free AI Score" */
@@ -1895,7 +1897,7 @@ const TGS = ['Researching', 'Comparing', 'Going', 'Went']; questionsS.forEach((q
 
 __dcStart(Component);</script><script>
 (function(){
-  var PH={"[Treatment room]": "https://localairegistry.com/images/brand/plates/plastic-surgeon-cut.webp", "[Dr. Nair, consult]": "https://localairegistry.com/images/brand/plates/optometry-clinic-cut.webp", "[Results wall]": "https://localairegistry.com/images/brand/plates/hair-salon-cut.webp", "[Front desk]": "https://localairegistry.com/images/brand/plates/dental-practice-cut.webp", "[Storefront]": "https://localairegistry.com/images/brand/plates/coffee-shop-cut.webp"};
+  var PH={"[Treatment room]": "https://images.unsplash.com/photo-1761819922656-d1b77eef49c0?fm=jpg&q=70&w=1600&auto=format&fit=crop", "[Dr. Nair, consult]": "https://images.unsplash.com/photo-1785861001619-b263ebd4e615?fm=jpg&q=70&w=1600&auto=format&fit=crop", "[Results wall]": "https://images.unsplash.com/photo-1595871151608-bc7abd1caca3?fm=jpg&q=70&w=1600&auto=format&fit=crop", "[Front desk]": "https://images.unsplash.com/photo-1731514693674-a32211b63996?fm=jpg&q=70&w=1600&auto=format&fit=crop", "[Storefront]": "https://images.unsplash.com/photo-1788781537938-e96aea5838d3?fm=jpg&q=70&w=1600&auto=format&fit=crop"};
   var SIZE={9:12,10:13,11:13,12:13,13:14,14:15,15:16,16:17,17:18};
   function radius(v){var n=parseFloat(v);if(!n||v.indexOf('%')>-1||n>=999)return null;if(n<=4)return null;if(n<=9)return '10px';if(n<=20)return '16px';return '28px';}
   function fix(root){
