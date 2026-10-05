@@ -745,6 +745,32 @@ body::before{content:"";position:fixed;inset:0;background:url("data:image/svg+xm
 #dc-root a:not(.btn):not(.shb){text-decoration-color:rgba(239,91,60,0.5);text-underline-offset:4px}
 #dc-root .rrow{border-top:0 !important;padding:22px 0 !important}
 #dc-root .rrow + .rrow{border-top:1px solid var(--line) !important}
+
+/* fixes: stat strip */
+#dc-root .aiv-v{font-size:42px !important}
+#dc-root .aiv-v *{font-family:"Cormorant Garamond",Georgia,serif !important;font-weight:500 !important}
+#dc-root .aiv-n .sl{text-transform:none !important;letter-spacing:0 !important;font-size:13px !important;font-weight:500 !important;line-height:1.35 !important}
+#dc-root .aiv{gap:26px !important}
+#dc-root .aiv-n{min-width:96px !important;flex:1 1 auto !important}
+#dc-root .aiv-v{white-space:nowrap !important}
+#dc-root .aiv-d{flex:0 1 290px !important;max-width:290px !important;min-width:0 !important}
+/* references keep their small, dense type */
+#dc-root .refs .rt{font-family:"Hanken Grotesk",sans-serif !important;font-size:inherit !important}
+/* more glass: one frosted sheet behind the whole page body */
+#dc-root > div{position:relative;isolation:isolate;height:auto !important;min-height:100vh;padding-bottom:40px}
+#dc-root > div::before{content:"";position:absolute;top:128px;bottom:24px;left:84px;right:84px;z-index:-1;border-radius:34px;
+  background:linear-gradient(160deg,rgba(255,252,246,0.62),rgba(250,244,234,0.38));border:1px solid rgba(255,255,255,0.75);
+  -webkit-backdrop-filter:blur(22px) saturate(130%);backdrop-filter:blur(22px) saturate(130%);
+  box-shadow:0 1px 0 rgba(255,255,255,0.95) inset,0 40px 90px -40px rgba(15,26,51,0.35),0 12px 30px -18px rgba(15,26,51,0.18)}
+/* deeper, layered shadows on cards; brighter glass edge */
+#dc-root .card,#dc-root .aiv,#dc-root [style*="background: #ffffff"],#dc-root [style*="background: #fff;"],#dc-root [style*="background: #fbf8f3"]{
+  background:linear-gradient(160deg,rgba(255,253,249,0.82),rgba(248,242,232,0.62)) !important;
+  -webkit-backdrop-filter:blur(24px) saturate(140%);backdrop-filter:blur(24px) saturate(140%);
+  box-shadow:0 1px 0 rgba(255,255,255,0.95) inset,0 -1px 0 rgba(15,26,51,0.04) inset,0 28px 60px -26px rgba(15,26,51,0.38),0 8px 18px -10px rgba(15,26,51,0.16) !important}
+#dc-root .aiv{background:linear-gradient(160deg,rgba(248,228,208,0.88),rgba(245,223,200,0.62)) !important}
+#dc-root .hmos{box-shadow:0 30px 60px -28px rgba(15,26,51,0.4),0 8px 20px -12px rgba(15,26,51,0.2)}
+#dc-root .btn:not(.b-dark):not(.grad):not(.b-coral),#dc-root .shb,#dc-root .tag,#dc-root .pill,#dc-root .uf > span,#dc-root .cbs{
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,0.9) inset,0 8px 18px -12px rgba(15,26,51,0.3) !important}
 /* custom icons */
 .lr-ic{width:18px;height:18px;flex-shrink:0;display:inline-block;vertical-align:-3px}
 </style></head><body style="margin:0"><div class="lr-street" aria-hidden="true"></div><div id="dc-root"></div><script type="text/x-dc-tpl" id="dc-tpl">
@@ -1854,10 +1880,10 @@ __dcStart(Component);</script><script>
   function fix(root){
     root.querySelectorAll('*').forEach(function(e){
       if(e.__fx)return; e.__fx=1;
-      var s=getComputedStyle(e), fs=Math.round(parseFloat(s.fontSize));
+      var s=getComputedStyle(e), fs=Math.round(parseFloat(s.fontSize)); var inRefs=!!e.closest('.refs');
       var hasText=[].some.call(e.childNodes,function(n){return n.nodeType===3&&n.textContent.trim()});
-      if(hasText&&SIZE[fs]){e.style.setProperty('font-size',SIZE[fs]+'px','important');}
-      if(hasText&&fs<=17){e.style.setProperty('line-height','1.5','important');}
+      if(hasText&&SIZE[fs]&&!inRefs){e.style.setProperty('font-size',SIZE[fs]+'px','important');}
+      if(hasText&&fs<=17&&!inRefs){e.style.setProperty('line-height','1.5','important');}
       
       if(+s.fontWeight>=800){e.style.fontWeight='700';}
       if(hasText){var m=s.color.match(/\d+/g);if(m){var R=+m[0],G=+m[1],B=+m[2],mx=Math.max(R,G,B),mn=Math.min(R,G,B),L=(R+G+B)/3;
