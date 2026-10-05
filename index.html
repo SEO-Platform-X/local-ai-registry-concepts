@@ -811,6 +811,27 @@ body::before{content:"";position:fixed;inset:0;background:url("data:image/svg+xm
 #dc-root .ract,#dc-root .ract *,#dc-root .rrow a:not(.rt){font-size:12.5px !important;font-weight:600 !important}
 #dc-root .rv,#dc-root .rv b{font-size:14px !important}
 #dc-root .rrow .rt{font-size:24px !important;line-height:1.2 !important;margin-bottom:4px}
+/* v12: Reddit-style post hierarchy, clearer Book/Post switch, single-box composer, readable Unclaimed pill */
+#dc-root .rrow .rt{font-family:"Cormorant Garamond",Georgia,serif !important;font-size:28px !important;line-height:1.15 !important;font-weight:700 !important;letter-spacing:-0.01em !important;color:#0f1a33 !important;margin-bottom:6px}
+#dc-root .rmeta,#dc-root .rmeta *{font-size:12.5px !important;line-height:1.5 !important;font-weight:400 !important;color:#6b7488 !important}
+#dc-root .rmeta b{font-weight:500 !important;color:#4a5570 !important}
+#dc-root .rmeta .rkd{font-size:10.5px !important;font-weight:600 !important;letter-spacing:0.12em !important}
+#dc-root .rmeta .rkd.q{color:#2b59d9 !important}
+#dc-root .rmeta .rkd.t{color:#237233 !important}
+#dc-root .rmeta .rkd.h,#dc-root .rmeta .rkd.press{color:#c93b22 !important}
+#dc-root .ract,#dc-root .ract *,#dc-root .rlinks,#dc-root .rlinks a,#dc-root .rrow a:not(.rt){font-size:12px !important;font-weight:500 !important;color:#6b7488 !important}
+#dc-root .rlinks .need{color:#c93b22 !important;font-weight:600 !important}
+#dc-root .rv,#dc-root .rv b{font-size:13px !important;font-weight:600 !important;color:#6b7488 !important}
+#dc-root .seg{background:rgba(15,26,51,0.09) !important;border:1px solid rgba(15,26,51,0.14) !important;padding:4px !important}
+#dc-root .seg label{color:#4a5570 !important;font-weight:600 !important;background:transparent !important;box-shadow:none !important}
+#dc-root .seg label[for="bk-book"]{background:#0f1a33 !important;color:#fff !important;box-shadow:0 6px 14px -6px rgba(15,26,51,0.5) !important}
+#bk-ask:checked ~ * #dc-root .seg label[for="bk-book"],#dc-root #bk-ask:checked ~ * .seg label[for="bk-book"]{background:transparent !important;color:#4a5570 !important;box-shadow:none !important}
+#dc-root #bk-ask:checked ~ * .seg label[for="bk-ask"]{background:#0f1a33 !important;color:#fff !important;-webkit-text-fill-color:#fff !important;box-shadow:0 6px 14px -6px rgba(15,26,51,0.5) !important}
+#dc-root #pn-ask .fg{border:0 !important;border-radius:0 !important;overflow:visible !important}
+#dc-root #pn-ask .fg .f{background:#f6f1e8 !important;border:1px solid rgba(15,26,51,0.28) !important;border-radius:16px !important;padding:14px 16px !important;gap:8px !important}
+#dc-root #pn-ask .fg textarea{background:transparent !important;border:0 !important;border-radius:0 !important;box-shadow:none !important;outline:none !important;padding:0 !important;height:96px !important;font-size:20px !important;line-height:1.3 !important}
+#dc-root #pn-ask .fg .l{color:#4a5570 !important;font-size:10px !important;letter-spacing:0.04em !important;white-space:nowrap}
+#dc-root .tag.red{font-family:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif !important;font-style:normal !important;font-size:12.5px !important;font-weight:700 !important;letter-spacing:0.04em !important;background:#fde8e2 !important;color:#b8321a !important;border:1px solid rgba(184,50,26,0.35) !important}
 /* custom icons */
 .lr-ic{width:18px;height:18px;flex-shrink:0;display:inline-block;vertical-align:-3px}
 </style></head><body style="margin:0"><div class="lr-street" aria-hidden="true"></div><div id="dc-root"></div><script type="text/x-dc-tpl" id="dc-tpl">
